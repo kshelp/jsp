@@ -53,7 +53,6 @@
 					<span style="font-size: 9pt;"> <font face="돋움체"><%=ENAME%></font></span>
 				</p>
 			</td>
-
 			<td width="150" height="20">
 				<p align="center">
 					<span style="font-size: 9pt;"> <font face="돋움체"><%=JOB%></font></span>
