@@ -41,7 +41,7 @@ public class FileUpHandler implements CommandHandler {
 		String uploadPath = req.getRealPath("upload");
 		System.out.println("path=" + uploadPath);
 
-		int size = 10 * 1024 * 1024;
+		int size = 10 * 1024 * 1024;  // 10MB, 최대 2GB
 		String name = "";
 		String subject = "";
 		String filename1 = "";
