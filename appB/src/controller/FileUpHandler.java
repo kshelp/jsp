@@ -64,13 +64,14 @@ public class FileUpHandler implements CommandHandler {
 			name = multi.getParameter("name");
 			subject = multi.getParameter("subject");
 
-			Enumeration files = multi.getFileNames();
-			List<String> fileNames = Collections.list(files);
+			Enumeration fileNames = multi.getFileNames();
+			List<String> files = Collections.list(fileNames);
 
 			String file, filename, origfilename;
 			
-			for(int i=1; i<fileNames.size(); i++) {
-				file = (String) files.nextElement();
+			for(int i=1; i<files.size(); i++) {
+				//file = (String) fileNames.nextElement();
+				file = files.get(i);
 				filename = multi.getFilesystemName(file);	
 				origfilename = multi.getOriginalFileName(file);
 				
