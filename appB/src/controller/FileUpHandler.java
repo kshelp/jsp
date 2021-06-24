@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.List;
@@ -64,10 +65,11 @@ public class FileUpHandler implements CommandHandler {
 			subject = multi.getParameter("subject");
 
 			Enumeration files = multi.getFileNames();
+			List<String> fileNames = Collections.list(files);
 
 			String file, filename, origfilename;
 			
-			for(int i=1; i<6; i++) {
+			for(int i=1; i<fileNames.size(); i++) {
 				file = (String) files.nextElement();
 				filename = multi.getFilesystemName(file);	
 				origfilename = multi.getOriginalFileName(file);
