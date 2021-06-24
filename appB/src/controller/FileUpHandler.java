@@ -69,7 +69,7 @@ public class FileUpHandler implements CommandHandler {
 
 			String file, filename, origfilename;
 			
-			for(int i=1; i<files.size(); i++) {
+			for(int i=0; i<files.size(); i++) {
 				//file = (String) fileNames.nextElement();
 				file = files.get(i);
 				filename = multi.getFilesystemName(file);	
